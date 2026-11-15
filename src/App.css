@@ -1,0 +1,258 @@
+.mensagem-vazia {
+  text-align: center;
+  color: #64748b;
+  background-color: #f8fafc;
+  padding: 20px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#root > div {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #2563eb;
+  font-size: 36px;
+}
+
+p {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background-color: #f1f5f9;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+li button {
+  background-color: #ef4444;
+  padding: 8px 12px;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+li button:hover {
+  background-color: #dc2626;
+}
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filtros button {
+  background-color: #94a3b8;
+  color: white;
+}
+
+.filtros button.ativo {
+  background-color: #2563eb;
+}
+
+.filtros button:hover {
+  background-color: #1d4ed8;
+}
+.acoes-tarefa {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.acoes-tarefa button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.acoes-tarefa .btn-editar {
+  background-color: #2563eb;
+  color: white;
+}
+
+.acoes-tarefa .btn-editar:hover {
+  background-color: #1d4ed8;
+}
+
+.acoes-tarefa .btn-eliminar {
+  background-color: #dc2626;
+  color: white;
+}
+
+.acoes-tarefa .btn-eliminar:hover {
+  background-color: #b91c1c;
+}
+/* Organizar a lista de tarefas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo de cada tarefa */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px;
+  margin-bottom: 10px;
+
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+/* Organizar o texto e a checkbox */
+li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Adaptar a aplicação a ecrãs pequenos */
+@media (max-width: 600px) {
+  li {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .acoes-tarefa {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 600px) {
+  .filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .filtros button {
+    flex: 1 1 100px;
+    min-width: 0;
+  }
+}
+.contadores {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.contador {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 5px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+}
+
+.contador strong {
+  font-size: 26px;
+}
+
+.contador span {
+  font-size: 12px;
+}
+
+.contador.total strong {
+  color: #2563eb;
+}
+
+.contador.pendentes strong {
+  color: #d97706;
+}
+
+.contador.concluidas strong {
+  color: #16a34a;
+}
+.formulario-tarefa {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.formulario-tarefa input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.formulario-tarefa button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .formulario-tarefa {
+    flex-direction: column;
+  }
+}
+.acoes-tarefa .btn-cancelar {
+  background-color: #64748b;
+  color: white;
+}
+
+.acoes-tarefa .btn-cancelar:hover {
+  background-color: #475569;
+}
